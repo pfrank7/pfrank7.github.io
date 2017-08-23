@@ -1,0 +1,305 @@
+---
+layout: default
+title: Paige Frank
+---
+<style>
+.img-thumbnail {
+	transition: .3s;
+	}
+.img-thumbnail:hover {
+	opacity: .5;
+}
+.home {
+    position:absolute;
+    z-index:2;
+    height:25px;
+    width: 25px;
+    right:90%;
+    top:20%;
+  }
+.home:hover {
+    height:30px;
+    width:30px;
+ }
+  .star, .star:hover, .star:active {
+    position:absolute;
+    z-index:2;
+  }
+  #star1, #star1:hover, #star1:active {
+    right:80%;
+    top:60%;
+  }
+  #star2, #star2:hover, #star2:active {
+    right:62%;
+    top:7%;
+  }
+  #star3, #star3:hover, #star3:active {
+    right:55%;
+    top:20%;
+}
+ #star4, #star4:hover, #star4:active {
+    right:58%;
+    top:17%;
+}
+.row h2 {
+   color: #BDC3C7;
+   text-align:center;
+   border-bottom:solid 1px #BDC3C7;
+   font-family: 'Apple Chancery' ,Times New Roman, Helvetica Neue, Courier;
+}
+.world {
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	height:70%;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/* ******** MODAL **********/
+	/* The Modal (background) */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+#prev:active, #prev:visited, #next:active, #next:visited {
+	text-decoration:none;
+}
+</style>
+<div>
+	<div class = "container">
+		<div style = "position:relative; left:0;, top:0; background-color:white; width:100%;">
+			<img class = "world" src = "photos/world.png">
+      			<a class = "star" id = "star1" href = "#Peru"> <img style="height:20px;
+      			width:20px;" src = "photos/star.png"> </a>
+      			<a class = "star" id = "star2" href = "#Iceland"> <img style="height:20px;
+      			width:20px;" src = "photos/star.png"> </a>
+     			<a class = "star" id = "star3" href = "#Amst"> <img style="height:20px; 
+     			width:20px;" src = "photos/star.png"> </a>
+      			<a class = "star" id = "star4" href = "#Ireland"> <img style="height:20px;
+      			width:20px;" src = "photos/star.png"> </a>
+      			<img class = "home" src = "photos/star.png" title= "HOME">
+		</div>
+  	</div>
+	
+  	<div id = "margin" class = "container" style = "margin-bottom:0px;">
+
+    		<div class = "row">
+			<div class = "col-sm-12">
+      				<h2 id = "Ireland" > Ireland </h2>
+	    		</div>
+    		</div>
+    
+    		<div class = "row">
+      			<figure class = "col-sm-6">
+          			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(1)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+    		</div>
+    
+    		<div class = "row">
+			<div class = "col-sm-12">
+            			<h2 id = "Iceland" > Iceland <h2>
+        		</div>
+    		</div>
+          
+    		<div class = "row">
+     			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(2)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(3)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+    		</div>
+								   
+    		<div class = "row">
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(4)" src = "../photos/IMG_4248.jpg">
+      			</figure>
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(5)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+    		</div>
+          
+    		<div class = "row">
+			<div class = "col-sm-12">
+      	    			<h2 id = "Amst" > Amsterdam </h2>
+			</div>
+    		</div>
+     
+    		<div class = "row">
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(6)"  src = "../photos/IMG_4212.jpg">
+      			</figure>
+    		</div>
+			 
+    		<div class = "row">
+	    		<div class = "col-sm-12">
+      				<h2 id = "Peru" > Peru </h2>
+	    		</div>
+    		</div>
+    
+    		<div class = "row">
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(7)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(8)" src = "../photos/IMG_5006.jpg">
+      			</figure>
+    		</div>
+								   
+    		<div class = "row">
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(9)" src = "../photos/IMG_4212.jpg">
+      			</figure>
+      			<figure class = "col-sm-6">
+        			<img class = "img-thumbnail cursor" onclick="openModal();currentSlide(10)"  src = "../photos/IMG_4212.jpg">
+      			</figure>
+    		</div>
+    
+    		<div id="myModal" class="modal">
+  			<span class="close cursor" onclick="closeModal()">&times;</span>
+    			
+			<div class="modal-content">
+
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4248.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_5006.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+    				<div class="mySlides">
+        				<img src="../photos/IMG_4212.jpg" style="width:100%">
+    				</div>
+							    
+    				<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+    				<a id="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>	
+	</div>
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>

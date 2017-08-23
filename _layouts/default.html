@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title style="color:black;">{{ page.title }}</title>
+
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+			<!-- Font awesome style sheet -->
+			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+			
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			
+		</head>
+		<body>
+			<nav class = "navbar navbar-toggleable-md .navbar-inverse navbar-fixed-top" style = "background-color: #512E5F; box-shadow: 0 0 3px 3px white inset;">
+				<div class = "container-fluid" id = "margin" style= "margin-bottom:0px; margin-top:0px;">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>                        
+      						</button>
+      						<a class="navbar-brand" href="#">PaigeFlemingFrank</a>
+    					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+	    			<ul class = "nav navbar-nav">
+	        			<li><a href="index.html">Home</a></li>
+					<li class = "dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+					<ul class="dropdown-menu">
+						<li><a href = "Me.html">About Me</a></li>
+						<li><a href="CV.html">Qualifications</a></li>
+						<li><a href="album.html">Photos</a></li>
+					</ul>
+		        		<li><a href="https://github.com/pfrank7">My Work</a></li>
+	    			</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="cont" style = "background-color: white; margin-top: 30px;">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+        			<div class="text-center center-block" style = "background-color: #512E5F; box-shadow: 0 0 3px 3px white inset;">
+            				<p class="txt-railway" style = "font-size: .75em;">
+							<a style = "margin:15px;" href = "Contact.html"> Contact Me</a>
+							<a style = "margin:15px;" href = "Blog.html"> Read My Blog</a>
+							<a style = "margin:15px;" href = "Paige_Frank.pdf" download> Download My Resume </a><br/></p>
+                    			<a href="https://github.com/pfrank7"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+	            			<a href="https://facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            			<a href="https://instagram.com"><i id="social-ig" class="fa fa-instagram fa-3x social"></i></a>
+	            			<a href="mailto:paigefrank7@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+				</div>
+			</footer>
+		</body>
+	</html>

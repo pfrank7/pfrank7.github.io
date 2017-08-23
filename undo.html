@@ -1,0 +1,91 @@
+---
+layout: default
+title: Paige Frank
+---
+<style>
+.jumbotron {
+	display:flex;
+	align-items:center;
+	background-image: url("../minne.JPG");
+	background-size:cover;
+	background-repeat:no-repeat;
+	opacity:1;
+	height:500px;
+	margin-bottom:0px;
+}
+.jumbotron h1 {
+    font-family: 'Times New Roman', Courier, Geogria;
+    color: white;
+    text-align:center;
+    font-size:500%;
+    margin: 5%;
+    text-shadow:
+    -1px -1px 0 #512E5F,  
+    1px -1px 0 #512E5F,
+    -1px 1px 0 #512E5F,
+    1px 1px 0 #512E5F;
+    box-shadow: 0 0 5px 5px white inset; opacity: 1; margin-top:0px; background-color: black; color: white; /*mix-blend-mode: multiply;*/
+    width:100%;
+    border-radius:25px;
+    padding:10px;
+}
+.jumbotron h2 {
+    font-family: 'Times New Roman' ,Courier, Geogria;
+    text-align:center;
+    margin: 5%;
+    color:black;
+     /*box-shadow: 0 0 5px 5px white inset; */ opacity: .5; margin-top:0px; background-color: white; /*color: white; mix-blend-mode: multiply;
+    border-radius:25px; */
+    width:100%;
+}
+/*.image-blurred {
+ background-image: url("../stairs smirk.jpg");
+    	background-size:cover;
+	height:500px;
+	width:350px;
+    box-shadow: 0 0 100px 100px white inset;
+    opacity: 1;
+    margin-bottom: 0px;
+    border-radius: 80px;
+	}
+@media only screen and (max-width: 800px) {
+    #paige {
+        display: none;
+    }
+}*/
+</style>
+<div>
+	<section class = "jumbotron">
+		<div id = "margin" class = "container">
+			<div class = "row">
+				<div class = "col-sm-12">
+					<div class = "text-center">
+						<h1 id = "letters" >&#8827&lowbar;</h1>
+					</div>
+				</div>
+				<!--div class = "col-sm-6">
+				<figure class = "image-blurred img-rounded" id = "paige">
+				</figure>
+				</div-->
+			</div>
+			<div class = "row text-center" style = "top:0px;">
+				<h2>Navigate the site to learn more about me. </h2>
+			</div>
+		</div>
+	</section>
+</div>
+<script>
+  function printLetterByLetter(destination, message, speed){
+    var i = 0;
+    var interval = setInterval(function(){
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            clearInterval(interval);
+        }
+    }, speed);
+}
+window.onload = function(){
+    printLetterByLetter("letters", "Hello world.", 200);
+}
+</script>

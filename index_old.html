@@ -1,0 +1,154 @@
+---
+layout: default
+title: Paige Frank
+---
+  <style> 
+  #letters {
+      font-family: 'Times New Roman', Calibre, Courier;
+      color: white;
+      font-size: 100px;
+      text-shadow:none;
+      margin:100px, auto;
+      width: 100%;
+      position:absolute;
+      top:250px;
+      left:0px;
+      text-align:center;
+	  
+    }
+    nav, footer {
+      opacity: 0;
+    }
+ .jumbotron {
+	display:flex;
+	align-items:center;
+	background-image: url("../tree.jpg");
+	/*background-color: white;*/
+	/*background-size:75px 75px;*/
+	background-size:cover;
+	background-repeat:no-repeat;
+	opacity:1;
+	height:600px;
+	margin-bottom:0px;
+  	text-align:center;
+	box-shadow: 0 0 30px 30px white inset;
+}
+.jumbotron h1 {
+    font-family: 'Apple Chancery', Courier, Geogria;
+    color: white;
+    text-align:left;
+    font-size:150px;
+    margin: 100px, auto;
+     text-shadow:
+   -1px -1px 0 #512E5F,  
+    1px -1px 0 #512E5F,
+    -1px 1px 0 #512E5F,
+     1px 1px 0 #512E5F;
+}
+.jumbotron h2 {
+    font-family: 'Times New Roman' ,Courier, Geogria;
+  /*  color: #BDC3C7; /*#5E261F;*/
+    text-align:center;
+    margin: 100px, auto;
+    text-size: 75px;
+    color:#512E5F;
+   /* box-shadow: 0 0 5px 5px white inset; opacity: .3; margin-top:0px; background-color: black; color: white; mix-blend-mode: multiply;*/
+    border-radius:25px;
+}
+.image-blurred {
+ background-image: url("../stairs smirk.jpg");
+ background-size:cover;
+ height:0px;
+ width:350px;
+ box-shadow: 0 0 100px 100px white inset;
+ opacity: .5;
+ margin-bottom: 0px;
+ border-radius: 80px;
+}
+#paige {
+	 visibility:hidden;
+}
+@media only screen and (max-width: 800px) {
+    #paige {
+        display: none;
+    }
+}
+  </style>
+<div>
+  <section class = "jumbotron jumbo">
+	  <div id = "margin" class = "container">
+			<div class = "row" style = "height:350px;">
+				<div class = "col-sm-6">
+					<div class = "text-center" id = "header">
+					</div>
+				</div>
+				<div class = "col-sm-6">
+					<figure class = "image-blurred img-rounded" id = "paige">
+					</figure>
+				</div>
+			</div>
+		  	<div class = "row" id = "helloworld" style = "width:100%;text-align: center;">
+      				<h1 class = "intro" id = "letters"></h1>
+      				<button OnClick = "changeImg()" style = "background-color:white; border-radius: 15px; color: black; text-decoration:none; width:200px; margin:auto; height:100px; font-size:30px"> Enter Site </button>
+    			</div>
+			<div class = "row text-center" id = "sub" style = "top:0px;">
+			</div>
+	</div>
+  </section>
+</div>
+<script>
+  function printLetterByLetter(destination, message, speed){
+    var i = 0;
+    var interval = setInterval(function(){
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            clearInterval(interval);
+        }
+    }, speed);
+}
+window.onload = function(){
+    printLetterByLetter("letters", "Hello world.", 200);
+}
+function changeImg() {
+  var list = document.getElementsByClassName("jumbo");
+  var background = list[0];
+  var i = 1;
+  var j = 0;
+  var interval1 = setInterval( 
+    function() {
+      i = i - .1;
+      background.style.opacity = i;
+      j = j + .1;
+      var list2 = document.getElementsByTagName("nav")
+      list2[0].style.opacity = j;
+      var list3 = document.getElementsByTagName("footer")
+      list3[0].style.opacity = j;
+      if (j  > .9) {
+        background.style.backgroundImage = "url('../treefade.jpg')";
+       	var element = document.getElementById("helloworld");
+	element.parentNode.removeChild(element);
+        background.style.opacity = "1";
+        createHeader();
+        createSub();
+	document.getElementById("paige").style.height = "500px";
+	document.getElementById("paige").style.visibility = "visible";
+        clearInterval(interval1);
+    }
+  }, 100);
+}
+function createHeader() {
+    var h = document.createElement("H1");
+    var t = document.createTextNode("Paige Frank");
+    h.appendChild(t);
+    document.getElementById("header").appendChild(h);
+}
+function createSub() {
+    var s = document.createElement("H2");
+    var r = document.createTextNode("Computational Biomedical Engineering & Computer Science");
+    s.appendChild(r);
+    document.getElementById("sub").appendChild(s);
+}
+</script>
+    
+</html>

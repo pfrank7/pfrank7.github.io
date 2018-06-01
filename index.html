@@ -66,8 +66,8 @@ title: Paige Frank
 </style>
 <div>
 	<section class = "jumbotron">
-		<div class = "container" style = "margin:0px;padding:0px;">
-			<div class = "row" style = "margin:0px;padding:0px;">
+		<div class = "container" style = "margin:0px;padding:0px; width:100%;">
+			<div class = "row" style = "margin:0px;padding:0px;width:100%;">
 				<div id = "helloW" > <!-- class = "text-center" -->
 					<h1 id = "letters">&#8827&lowbar;</h1>
  				</div>
@@ -134,6 +134,7 @@ title: Paige Frank
         }
     }, speed);
     $("#helloW").fadeOut(5000);
+    $("#helloW").slideUp();
 }
 window.onload = function(){
     printLetterByLetter("letters", "Hello world.", 200);

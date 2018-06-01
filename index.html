@@ -59,6 +59,7 @@ title: Paige Frank
 	font-family:'Times New Roman', Calibra, serif;
 	background-attachment: fixed;
    	background-position: center;
+	height:100%;
 }
 .Hopkins h1 {
 	text-align: center; 
@@ -73,7 +74,7 @@ title: Paige Frank
 }
 </style>
 <div>
-	<div> <!-- class = "text-center" -->
+	<div id = "helloW" > <!-- class = "text-center" -->
 		<h1 id = "letters">&#8827&lowbar;</h1>
  	</div>
 	<section class = "jumbotron">
@@ -137,5 +138,15 @@ title: Paige Frank
 }
 window.onload = function(){
     printLetterByLetter("letters", "Hello world.", 200);
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+  } else {
+    document.getElementById("helloW").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
 }
 </script>

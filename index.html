@@ -66,12 +66,12 @@ title: Paige Frank
 </style>
 <div>
 	<section class = "jumbotron">
+		<div class = "row" style = "margin:0px;padding:0px;">
+			<div id = "helloW" > <!-- class = "text-center" -->
+				<h1 id = "letters">&#8827&lowbar;</h1>
+ 			</div>
+		</div>
 		<div id = "margin" class = "container">
-			<div class = "row">
-				<div id = "helloW" > <!-- class = "text-center" -->
-					<h1 id = "letters">&#8827&lowbar;</h1>
- 				</div>
-			</div>
 			<div class = "row text-center" style = "top:0px;">
 				<h1 style = "height:400px"> Paige Frank </h1>
 				<h2>Welcome to my personal site. I have created it from scratch with help from HTML, CSS and a little JavaScript.</h2>
@@ -133,7 +133,7 @@ title: Paige Frank
             clearInterval(interval);
         }
     }, speed);
-    $("#helloW").fadeOut(3000);
+    $("#helloW").fadeOut(5000);
 }
 window.onload = function(){
     printLetterByLetter("letters", "Hello world.", 200);

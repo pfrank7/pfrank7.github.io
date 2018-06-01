@@ -143,9 +143,10 @@ window.onload = function(){
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos < currentScrollPos) {
+	  document.getElementById("helloW").style.display = "inline"
   } else {
-    document.getElementById("helloW").style.top = "-50px";
+    document.getElementById("helloW").style.display = "none";
   }
   prevScrollpos = currentScrollPos;
 }

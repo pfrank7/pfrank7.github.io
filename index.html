@@ -3,39 +3,23 @@ layout: default
 title: Paige Frank
 ---
 <style>
-.jumbotron {
-	display:flex;
-	align-items:center;
+#minne {
 	background-image: url("../photos/minne.JPG");
-	background-size:cover;
-	background-repeat:no-repeat;
-	opacity:1;
-	/*height:500px;*/
-	margin-bottom:0px;
-	margin-top:0px;
-	background-attachment: fixed;
-   	background-position: center;
-	padding:0px;
 }
 #letters {
     font-family: 'Times New Roman', Courier, Geogria;
     color: white;
     text-align:center;
-    /*font-size:50%;*/
-    /*margin: 5%;*/
     text-shadow:
     -1px -1px 0 #512E5F,  
     1px -1px 0 #512E5F,
     -1px 1px 0 #512E5F,
     1px 1px 0 #512E5F;
-    /*box-shadow: 0 0 5px 5px white inset; */
     opacity: 1; 
-    margin-top:0px; background-color: black; color: white; /*mix-blend-mode: multiply;*/
+    margin-top:0px; background-color: black; color: white;
     width:100%;
     height:100vh;
     margin-bottom:0px;
-    /*border-radius:25px;
-    padding:10px;*/
 }
 .jumbotron h2 {
     font-family: 'Times New Roman' ,Courier, Geogria;
@@ -66,30 +50,8 @@ title: Paige Frank
 #Hopkins a {
 	color:black;
 }
-.blurb {
-  text-align: center;
-  font-family: 'Times New Roman', Helvetica, Courier;
-  margin: 40px, auto;
-
-}
-.things {
-	display:flex;
-	align-items:center;
+#things {
 	background-image: url("../photos/greytech.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	opacity:1;
-	/*height:500px;*/
-	margin-bottom:0px;
-	margin-top:0px;
-	background-attachment: fixed;
-   	background-position: center;
-	padding:0px;
-}
-.img-circle {
-	width: 300px;
-	height:300px;
-	margin: 40px, auto;
 }
 .icon {
     border: solid 5px black;
@@ -132,7 +94,7 @@ title: Paige Frank
 }
 </style>
 <div>
-	<section class = "jumbotron">
+	<section id = "minne" class = "jumbotron">
 		<div class = "container" style = "margin:0px;padding:0px; width:100%;">
 			<div class = "row" style = "margin:0px;padding:0px;width:100%;">
 				<div id = "helloW" > <!-- class = "text-center" -->
@@ -189,7 +151,7 @@ title: Paige Frank
 		</div>
 	</div>
 	</section>
-	<section class = "things">
+	<section id = "things" class = "jumbotron">
 		<div class = "container">
 		<div class = "page-header">
 			<h1> What Have I done? </h1>

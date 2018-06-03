@@ -5,6 +5,9 @@
 .cont p {
     font-family: 'Times New Roman', Helvetica Neue ,Helvetica,Arial,sans-serif;
 }
+.row {
+	color: #626567;
+}
 .page-header {
     font-family:'Times New Roman', Helvetica Neue ,Helvetica,Arial,sans-serif;
     width:100%; 

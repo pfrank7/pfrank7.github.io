@@ -28,10 +28,6 @@ title: Paige Frank
 #Hopkins h1 {
 	color:white;
 }
-.paige {
-	background-image: url("../photos/tmpGirl.jpg");
-	background-repeat: no-repeat;
-	}
 #Hopkins {
 	background-image: url("../photos/minne.JPG");
 	box-shadow: 0 0 10px 10px white inset;
@@ -55,6 +51,10 @@ title: Paige Frank
 	background-color:white;
 	height:300px;
 }
+.paige {
+	background-image: url("../photos/tmpGirl.jpg");
+	background-repeat: no-repeat;
+}
 </style>
 <div>
 	<section>
@@ -66,7 +66,7 @@ title: Paige Frank
  					</div>
 				</div>
 				<div class = "row text-center" id = "Hopkins_intro" style = "top:0px;margin:0px;padding:0px; width:100%;">
-					<h2 id = "welcome">Welcome to my personal site. I have created it from scratch with help from HTML, CSS and a little JavaScript.</h2>
+					<h2>Welcome to my personal site. I have created it from scratch with help from HTML, CSS and a little JavaScript.</h2>
 					<h1> <span class="glyphicon glyphicon-chevron-down"></span> </h1>
 				</div>
 			</div>
@@ -98,7 +98,7 @@ title: Paige Frank
             clearInterval(interval);
         }
     }, speed);
-   $("#welcome").fadeIn(4500);
+   $("#Hopkins_intro").fadeIn(4500);
 }
 window.onload = function(){
     printLetterByLetter("letters", "Hello world.", 200);

@@ -1,0 +1,40 @@
+<section>
+	<div class = "jumbotron" id = "Hopkins">
+		<div class = "container" style = "margin:0px; width:100%;padding:0px;">
+			<div class = "row" style = "margin:0px;width:100%;">
+				<h1> Engineer <span class="glyphicon glyphicon-asterisk"></span> Innovator <span class="glyphicon glyphicon-asterisk"></span> Developer </h1>
+			</div>
+			<div class = "row">
+				<div class = "container" id = "margin" style = "background-color: white; opacity: 1; color:black;">
+					<div class = "row">
+						<div class = "col-sm-12 text-center">
+							<h3 style = "font-family:'Apple Chancery';"> Johns Hopkins University '19 </h3>
+							<h4 style = "font-family: 'Times New Roman';"> Computational Biomedical Engineering and Computer Science </h4>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-sm-6">
+							<p class = "paragraph"><a href="http://www.jhunewsletter.com" style = "color:#CD6155;"><sub>the johns hopkins</sub><big> News-letter</big></a>
+							</p>
+							<p class = "paragraph"><a href = "https://www.facebook.com/alphaphijhu/" style = "color:#99A3A4;">Alpha Phi Fraternity</a>
+							</p>
+							<p class = "paragraph" style = "color:#AF7AC5;">Modeling and Design Lab Teaching Assistant
+							</p>
+							<p class = "paragraph" style = "color:#7FB3D5;"> <a href = "DesignTeam.html" style = "color:#7FB3D5;"> Design Team </a> Member
+							</p>
+						</div>
+						<div class = "col-sm-6">
+							<p class = "paragraph"><a href = "http://pages.jh.edu/~bmes/" style = "color:#BB8FCE;"> BME Society Mentor</a>
+							</p>
+							<p class = "paragraph"><a href = "http://ambassadors.johnshopkins.edu/" style = "color:#5499C7;">Alumni Student Ambassadors</a>						</p>
+							<p class = "paragraph"><a href = "http://chiblab.jhu.edu/" style = "color:#52BE80;">Chib Lab Research Assitant</a>
+							</p>
+							<p class = "paragraph" style = "color:#5D6D7E;">Biomedical Engineering Lab Manager
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>

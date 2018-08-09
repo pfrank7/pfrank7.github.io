@@ -1,3 +1,33 @@
+.details {
+	height:100px;
+	margin: 10px, auto;
+	padding: 10px;
+}
+.sec {
+	/*box-shadow: 0 0 10px 10px #D1C4E9 inset;*/
+	padding:20px;
+}
+.row_ {
+	padding:30px;
+}
+.turq {
+	color: #00838F;
+}
+.pink {
+	color: #AD1457;
+}
+.navy {
+	color: #1A237E;
+}
+.title h2 {
+	font-family: 'Apple Chancery', Times New Roman, Courier;
+}
+.title {
+	width: 200px;
+	height: 50px;
+	margin:300px, auto;
+}
+
 <section id = "things" class = "jumbotron">
 		<div class = "container">
 		<div class = "page-header">

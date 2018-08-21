@@ -91,14 +91,16 @@ footer ul li a {
 .navbar {
     margin-bottom:0px;
 }
-.navbar-brand {
-    font-family: 'Times New Roman' Apple Chancery, Helvetica Neue;
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus  {
     color: black;
+}
+.navbar-brand {
+    font-family: 'Apple Chancery', Helvetica Neue;
 }
 a {
    text-decoration: none;
    font-family: 'Times New Roman', Helvetica Neue ,Helvetica,Arial,sans-serif;
-   color: black;
+   color: white;
    font-size:1.5em;
 }
 a:hover {
@@ -107,4 +109,36 @@ a:hover {
 }
 a:active {
     top:2px;
+}
+a:visited {
+  color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5B2C6F;
+    z-index:3;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color:  #5B2C6F;
+}
+.navbar-toggle .icon-bar {
+    color: white;
+    background-color: white;
+}
+.dropdown-menu {
+    background-color: #5B2C6F;
+}
+.dropdown-menu li a{
+    color: white;
+}
+.dropdown-menu li a:hover{
+    color: black;
 }

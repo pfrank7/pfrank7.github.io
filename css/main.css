@@ -41,7 +41,7 @@
 	background-repeat:no-repeat;
 }	
 #letters {
-    font-family: 'Apple Chancery', Times New Roman, Courier, Geogria;
+    font-family: 'Times New Roman', Courier, Geogria;
     color: white;
     text-align:center;
     text-shadow:
@@ -55,7 +55,7 @@
     margin-bottom:0px;
 }
 #Hopkins h2 {
-    font-family: 'Apple Chancery',Times New Roman ,Courier, Geogria;
+    font-family: 'Times New Roman' ,Courier, Geogria;
     text-align:center;
     margin: 5%;
     color:white;
@@ -70,7 +70,7 @@
 }
 #Hopkins_cont {
 	text-align: center; 
-	font-family: 'Apple Chancery', Times New Roman, Courier, Geogria;
+	font-family: 'Times New Roman' , Courier, Geogria;
 	background-color:black;
 	height:100vh;
 	width:100%;

@@ -36,9 +36,27 @@
 	width:100%;
 	heigh:auto;
 }
-#title-image-back {
+.me-text {
 	background-image: url("../photos/JHU.jpg");
 	background-repeat:no-repeat;
+	color: white; 
+	vertical-align:top; 
+	border-radius:10px;
+	position:absolute;
+}
+me-overlay {
+	  height: 100%;
+	  width: 100%;
+	  color:white; 
+	  background-color:black; 
+	  mix-blend-mode: multiply; 
+	  opacity:.7;
+	  display:block;
+}
+me-image {
+	display:block;
+	width:100%;
+	height:100%;
 }	
 #letters {
     font-family: 'Times New Roman', Courier, Geogria;

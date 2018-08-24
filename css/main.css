@@ -44,7 +44,7 @@
 	border-radius:10px;
 	position:absolute;
 }
-me-overlay {
+.me-overlay {
 	  height: 100%;
 	  width: 100%;
 	  color:white; 
@@ -53,12 +53,12 @@ me-overlay {
 	  opacity:.7;
 	  display:block;
 }
-me-image {
+.me-image {
 	display:block;
 	width:100%;
 	height:100%;
 }
-me-cont {
+.me-cont {
 	height:auto;
 	width:100%;
 }	

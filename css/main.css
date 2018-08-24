@@ -19,6 +19,7 @@
 }
 .title-container {
 	position: relative;
+	width:100%;
 }
 .title-text {
   color: white;
@@ -32,6 +33,8 @@
 }
 .title-image {
 	display:block;
+	width:100%;
+	heigh:auto;
 }
 #letters {
     font-family: 'Times New Roman', Courier, Geogria;

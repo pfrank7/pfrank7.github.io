@@ -36,6 +36,10 @@
 	width:100%;
 	heigh:auto;
 }
+.title-image-back {
+	background-image: url("../photos/JHU.jpg");
+	background-repeat:no-repeat;
+}	
 #letters {
     font-family: 'Apple Chancery', Times New Roman, Courier, Geogria;
     color: white;

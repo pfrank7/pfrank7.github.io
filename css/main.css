@@ -296,4 +296,6 @@ a:visited {
     text-decoration: none;
     cursor: pointer;
 }
-
+.blue {
+	color: #008CBA;
+}	

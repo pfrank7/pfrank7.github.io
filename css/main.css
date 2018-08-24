@@ -44,7 +44,7 @@
 .me-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .me-overlay {
@@ -72,8 +72,8 @@
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
 }
 #letters {
     font-family: 'Times New Roman', Courier, Geogria;

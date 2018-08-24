@@ -56,7 +56,9 @@ title: Paige Frank
 				<div class = "col-sm-3">
 					<img style = "border-color: purple;" src="../photos/lab_experience.JPG" class="img-circle" alt="Education">
 					<div class = "text-center text">
+						<button id = "EducationBtn" style = "background:none; border:none;" >
 						<p> Education </p>
+						</button>
 					</div>
 				</div>
 				<div class = "col-sm-3">
@@ -149,6 +151,50 @@ title: Paige Frank
 		</div>
 	</div>
 
+<!-- Education -->
+	
+<div class = "modal" id = "Education" > 
+	<div class = "container modal-content">
+		<span class="close">&times;</span>
+		<div class = "title-container">
+			<div class = "overlay text-center">
+				<h1 class = "title-text" style = "color:white;" > Plaqate </h1>
+			</div>
+			<img class = "title-image" src = "../photos/dteam.jpg">
+		</div>
+		<div class = "row">
+			<figure class = "col-sm-7">
+				<p style = "top:50%;"> January 2016 I joined a team of 7 other undergraduate students working to 
+					design a <big class = "blue">safer coronary atherectomy device</big> for the treatment of <big class = "blue"> atheroslerosis </big>. 
+					Our team worked with <big class = "blue"> Johns Hopkins doctors </big> and <big class = "blue"> Johns Hopkins Applied Physics Laboratory 
+					engineers </big> to design the device with both <big class = "blue">medical and mechanical</big> concerns in mind. </p>
+			</figure>
+			<figure class = "col-sm-5">
+				<img class = "img-circle img-temp" src = "../photos/work.JPG">
+			</figure>
+		</div>
+		<div class = "row">
+			<figure class = "col-sm-5">
+				<img class = "img-circle img-temp" src = "../photos/heartclipart.png">
+			</figure>
+			<figure class = "col-sm-7">
+				<p style = "top:50%;"> Our team was awarded a <big class = "blue"> stage 1 Venture Well Grant </big> giving our team funding as well as the opportunity
+					to attend <big class = "blue"> specialized business plan and entrepreneurship workshops</big>. </p> 
+			</figure>
+		</div>
+		<div class = "row">
+			<figure class = "col-sm-7">
+				<p style = "top:50%;"> Our team won second place in the <big class = "blue">Johns Hopkins Business Plan competition</big> 
+					for our device <big class = "blue">Plaqate</big>. The device was designed to utilize a specific method of ablation 
+					to remove <big class = "blue">arterial plaque </big>while not damaging arterial walls.  </p>
+			</figure>
+			<figure class = "col-sm-5">
+				<img class = "img-circle img-temp" src = "../photos/burr.jpg">
+				
+			</figure>
+		</div>
+	</div>
+	
 <!-- Next Modal -->
 <script>
   function printLetterByLetter(destination, message, speed){
@@ -165,30 +211,48 @@ title: Paige Frank
 window.onload = function(){
     printLetterByLetter("letters", "Hello world.", 200);
 }
-
+//MODAL 1
 // Get the modal
 var modal = document.getElementById('DesignTeam');
-
 // Get the button that opens the modal
 var btn = document.getElementById("DesignTeamBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+}
+
+//MODAL 2
+
+// Get the modal
+var modal2 = document.getElementById('Education');
+// Get the button that opens the modal
+var btn2 = document.getElementById("EducationBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
     }
 }
 </script>

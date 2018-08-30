@@ -41,7 +41,10 @@
   width: 100%;
   height:100%;
 }
-
+.me-cont img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}	
 .me-image {
   display: block;
   width: 100%;

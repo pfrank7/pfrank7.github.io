@@ -126,10 +126,10 @@
 }
 .port {
 	width: 100%;
-	background-image: url("../photos/portfolioback.png");
+	/*background-image: url("../photos/portfolioback.png");
 	background-repeat: no-repeat;
 	background-size: 100% 75%;
-	background-position: top;
+	background-position: top;*/
 	}	
 .img-circle {
 	margin:0px;

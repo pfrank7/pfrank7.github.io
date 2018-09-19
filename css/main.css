@@ -19,7 +19,7 @@
 .title-container {
 	position: relative;
 	width:70%;
-	margin-top:10%;
+	margin: auto;
 }
 .title-text {
   color: white;
